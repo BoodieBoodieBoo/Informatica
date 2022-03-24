@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.button {
+  background-color: #33D4FF; /* Blue */
+  border: none;
+  color: white;
+  padding: 10px 31px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 15px;
+}
+.pippo {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4FFF33;
+}
+
+
+.pippo:hover {  
+  background-color: #008CBA;
+  color: black;
+}
+
+
+.leone {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+
+
+.leone:hover {
+  background-color: #F3FF33;
+  color: white;
+}
+
+
+
+.redonred {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+
+
+.redonred:hover {
+  background-color: #FF4633;
+  color: white;
+}
+
+
+
+.AAfff {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+
+
+.AAfff:hover {
+  background-color: #33FFE3;
+  color: black;
+}
+
+
+
+
+.card {
+  box-shadow: 0 4px 30px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 60px 0px;
+}
+</style>
+</head>
+<body>
+
+<h2>Button</h2>
+
+<div class="card">
+  <div class="container">
+    <div class="button">
+    <div class="pippo">
+<button class="button pippo" onclick="saluta_i_furbi1()">Presentation</button>
+<button class="button leone" onclick="saluta_i_furbi2()">Instagram</button>
+<button class="button redonred" onclick="saluta_i_furbi3()">W3School</button>
+<button class="button AAfff" onclick="saluta_i_furbi4()">Palladino's Website</button>
+  </div>
+</div>
+
+<script>
+function saluta_i_furbi1() {
+  alert("Ciao, sono Youssef e questi sono dei siti che vi consiglio di visitare!");
+}
+function saluta_i_furbi2() {
+  alert(<a href="www.instagram.it"</a>);
+}
+function saluta_i_furbi3() {
+  alert(<a href="www.w3school.com"> </a>);
+}
+function saluta_i_furbi4() {
+  alert(<a href="www.marcopalladino.it/it/"></a>);
+}
+</script>
+
+</body>
+</html> 
