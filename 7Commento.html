@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Timer da sviluppare!</p> <!--Questa riga è un paragrafo -->
+
+<p id="demo"></p> <!--Anche questa riga è un paragrafo poichè è introdotta da <p e finisce con </p> -->
+
+<button onclick="myStopFunction()">Stop time</button> <!--In questa riga viene inserito il bottone con la funzione di stoppare il timer -->
+
+<button onclick="window.location.reload(true)">Start time</button> <!--In quetsa riga viene inserito il bottone con la funzione di startare il tempo -->
+
+<script>
+myVar = setInterval(myTimer, 1); //In questa riga viene settato l'intervallo della funzione myVar
+
+function myTimer() { //In questa riga viene selezionata la funzione myTimer
+
+
+  var d = new Date(); //In quetsa riga viene inserita l'ora attuale
+  var t = d.toLocaleTimeString(); //In questa riga l'ora viene selezionata come una stringa
+  var m=d.getMilliseconds(); //In questa riga vengono inseriti i millisecondi
+  document.getElementById("demo").innerHTML = t + " "+m; //In questa riga viene dichiarata una funzione che dà in output l'ora completa
+}
+
+function myStopFunction() { //In questa riga viene selezionata la funzione myStopFunction
+  clearInterval(myVar); //In questa riga viene inserito il codice per stoppare il timer
+}
+</script>
+
+</body>
+</html>
