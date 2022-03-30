@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio DOM</title>
+</head>
+<body>
+    <ul id="myList">
+        <li><a>Peperoncino</a></li>
+        <li><a>Paprika</a></li>
+        <li><a>Ketchup</a></li>    
+      </ul>
+      <button onclick="aggiungiElem()">Cliccami per aggiungere</button>
+
+      <script>
+          function aggiungiElem() {
+              const node = document.createElement("li");
+              const node1 = document.createElement("li");
+
+             const textnode = document.createTextNode("Pepe")
+             const text = document.createTextNode("Senape")
+
+             node.appendChild(textnode);
+             node1.appendChild(text);
+
+             document.getElementById("myList").appendChild(node)
+             document.getElementById("myList").appendChild(node1)
+          }
+      </script>
+</body>
+</html>
