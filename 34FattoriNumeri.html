@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="out"></p>
+    <script>
+        let i= 0;
+
+       for(let v=0;v<1000; v++)
+
+        {          let n= i++;
+
+                   document.getElementById("out").innerHTML+=fattorizzatore(n)+ i+ " ";
+
+
+       }
+       
+
+   function fattorizzatore(n)
+   {  let stringaFattori="";
+      let fineciclo=n/2;
+      for(let fattore=1; fattore<=fineciclo;fattore++)
+        {
+             if (n%fattore==0)
+                 {  stringaFattori=stringaFattori+ fattore+" ";
+                 }
+
+
+        }
+    return  stringaFattori;
+
+   }
+
+     
+
+    </script>
+   
+</body>
+</html>
