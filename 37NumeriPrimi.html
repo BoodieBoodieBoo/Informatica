@@ -10,11 +10,13 @@
     <h1>☆GENERATORE NUMERI PRIMI☆</h1>
     <button onclick="generaNumero();">✪Cliccami Per Generare I Numeri✪</button>
 <script>
+    let count=0;
     function generaNumero(){
         for(let i=1;i<=100;i++)
     {
-        if (Primo(i))
+        if (Primo(i)==true)
     {
+        count++;
         document.write("<span>☆"+i+"☆</span><br>")
     }
     else
@@ -22,13 +24,15 @@
         document.write("<span>"+i+"</span><br>")
     }
     }
+    document.write("<span>"+"I Numeri Primi Sono:"+count+"</span>")
     }
     function Primo(n){
+        let conta=0
     let prime=true
     for(let fattore=2; (fattore<=n/2); fattore++)
     { if (n%fattore==0)
     { prime=false;
-        
+
     }
     }
     return prime;
