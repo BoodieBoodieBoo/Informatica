@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>☆Numeri Primi☆</title>
+</head>
+<body>
+    <h1>☆GENERATORE NUMERI PRIMI☆</h1>
+    <button onclick="generaNumero();">✪Cliccami Per Generare I Numeri✪</button>
+<script>
+    function generaNumero(){
+        for(let i=1;i<=100;i++)
+    {
+        if (Primo(i))
+    {
+        document.write("<span>☆"+i+"☆</span><br>")
+    }
+    else
+    {
+        document.write("<span>"+i+"</span><br>")
+    }
+    }
+    }
+    function Primo(n){
+    let prime=true
+    for(let fattore=2; (fattore<=n/2); fattore++)
+    { if (n%fattore==0)
+    { prime=false;
+        
+    }
+    }
+    return prime;
+    }
+
+</script>
+</body>
+</html>
