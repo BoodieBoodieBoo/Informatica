@@ -1,1 +1,52 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Numeri Primi</title>
+</head>
+<body>
+    <input id="mioInput" value="840">
+    <br>
+    <button id="miobottone" onclick="calcola();">Calcola i fattori</button>
+    <p id="out"></p>
+    <script>
+       function calcola()
+       {          let n= document.getElementById("mioInput").value;
+                   document.getElementById("out").innerHTML=fattorizzatore(n);
+       }                   document.write("<span>"+"Il Numero Primo Più Vicino A 840 è:"+count+"</span>")
+
+       
+
+   function fattorizzatore(n)
+   {  let stringaFattori="";
+      let fineciclo=n/2;
+      for(let fattore=1; fattore<=fineciclo;fattore++)
+        {
+             if (n%fattore==0)
+                 {  stringaFattori=stringaFattori+ fattore + " Primo " ; 
+                 }
+
+
+        }
+    return  stringaFattori;
+
+   }
+   function Primo(n){
+        let conta=0
+    let prime=true
+    for(let fattore=2; (fattore<=n/2); fattore++)
+    { if (n%fattore==0)
+    { prime=false;
+
+    }
+    }
+    return prime;
+    }
+     
+
+    </script>
+</body>
+</html>
