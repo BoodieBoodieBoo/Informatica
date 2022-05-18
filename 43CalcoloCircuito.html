@@ -63,7 +63,6 @@ button:active {
 }
 </style>
 <body>
-<div class="center">
     <h1>Circuiti Serie e Parallelo</h1>
     <label for="v">Corrente (V)</label><br>
     <input type="text" id="v"><br>
@@ -84,7 +83,6 @@ button:active {
     <br>
     <button onclick="calcoloI()">Calcolo Tensioni (I1, I2, I3)</button>
     <p id="out"></p>
-</div>
 </body>
 
 <script>
@@ -94,7 +92,7 @@ button:active {
         R2=parseFloat(document.getElementById("r2").value);
         R3=parseFloat(document.getElementById("r3").value);
         ReqSerie=calcolaResistenzaEquivalente(R1, R2, R3);
-        document.getElementById("out").innerHTML+= "La resistenza equivalente in serie è: " + ReqSerie + "<br>"
+        document.getElementById("out").innerHTML+= "La resistenza equivalente in serie è: " + ReqSerie + "<br><br>"
     }
     function calcolaResistenzaEquivalente(A, B, C){
         return A+B+C;
@@ -124,7 +122,7 @@ button:active {
         R2=parseFloat(document.getElementById("r2").value);
         R3=parseFloat(document.getElementById("r3").value);
         ReqParallelo=calcoloParallelo(R1, R2, R3);
-        document.getElementById("out").innerHTML+= "La resistenza equivalente in parallelo è: " + ReqParallelo + "<br>"
+        document.getElementById("out").innerHTML+= "La resistenza equivalente in parallelo è: " + ReqParallelo + "<br><br>"
     }
 
     function calcoloParallelo(A, B, C){
@@ -142,7 +140,7 @@ button:active {
         I3=calcoloCorrenti(R3, V)
         document.getElementById("out").innerHTML+= "I1 = " + I1 + "<br>"
         document.getElementById("out").innerHTML+= "I2 = " + I2 + "<br>"
-        document.getElementById("out").innerHTML+= "I3 = " + I3 + "<br>"
+        document.getElementById("out").innerHTML+= "I3 = " + I3 + "<br><br>"
         }
 
         function calcoloCorrenti(A, B){
