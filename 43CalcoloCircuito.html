@@ -7,6 +7,13 @@
     <title>Circuiti Serie e Parallelo</title>
 </head>
 <style>
+.center {
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+padding: 10px;
+}
         input  {
              padding: 5px;
              font-size: 16px;
@@ -64,6 +71,7 @@ button:active {
 }
 </style>
 <body>
+<div class="center">
     <h1>Circuiti Serie e Parallelo</h1>
     <label for="v">Corrente (V)</label><br>
     <input type="text" id="v"><br>
@@ -84,7 +92,7 @@ button:active {
     <br>
     <button onclick="calcoloI()">Calcolo Tensioni (I1, I2, I3)</button>
     <p id="out"></p>
-
+</div>
 </body>
 
 <script>
